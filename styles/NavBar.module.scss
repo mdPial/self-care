@@ -1,0 +1,28 @@
+.navBarContainer {
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .routeContainer {
+    display: flex;
+    .signIn {
+      padding: 13px 0px;
+      margin-right: 39px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .signUp {
+      padding: 13px 21px;
+      background-color: #ee8090;
+      border-radius: 6px;
+      color: white;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

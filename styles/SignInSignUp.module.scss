@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+.container {
+  display: grid;
+  justify-content: center;
+  .containerWrapper {
+    display: flex;
+    .leftContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0px 20px;
+      .title {
+        text-align: center;
+        font-size: 16px;
+        font-family: "Rock Salt", cursive;
+      }
+      .inputContainer {
+        display: flex;
+        flex-direction: column;
+        .input {
+          width: 400px;
+          padding: 8px 10px;
+          margin: 6px;
+          font-size: 16px;
+          border-radius: 6px;
+          border: 1px solid #ee8090;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+          &::placeholder {
+            font-family: "Roboto", sans-serif;
+          }
+        }
+      }
+      .buttonAndLinkContainer {
+        margin-top: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .button {
+          padding: 13px 21px;
+          background-color: #ee8090;
+          border-radius: 6px;
+          color: white;
+          text-align: center;
+          border: none;
+          font-size: 17px;
+        }
+        .link {
+          display: inline-block;
+        }
+      }
+    }
+    .rightContainer {
+      width: 40vw;
+    }
+  }
+}
