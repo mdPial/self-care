@@ -1,11 +1,17 @@
+import Head from "next/head";
 import styles from "../styles/SignInSignUp.module.scss";
 
 export default function SignIn() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Sign In</title>
+      </Head>
       <div className={styles.containerWrapper}>
         <div className={styles.leftContainer}>
-          <p className={styles.title}>Hello! <br/> Sign in to your account</p>
+          <p className={styles.title}>
+            Hello! <br /> Sign in to your account
+          </p>
           <div className={styles.inputContainer}>
             <input
               type="text"

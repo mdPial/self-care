@@ -1,8 +1,12 @@
+import Head from "next/head";
 import styles from "../styles/SignInSignUp.module.scss";
 
 export default function SignUp() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Sign Up</title>
+      </Head>
       <div className={styles.containerWrapper}>
         <div className={styles.leftContainer}>
           <p className={styles.title}>START THE JOURNEY</p>
