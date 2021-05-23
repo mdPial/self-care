@@ -1,0 +1,57 @@
+.main {
+  .heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 82vh;
+    .leftContainer {
+      width: 40vw;
+      .title {
+        font-size: 72px;
+        font-weight: bold;
+        margin: 0px;
+      }
+      .description {
+        font-size: 18px;
+        width: 30vw;
+        line-height: 25px;
+      }
+      .button {
+        width: 100px;
+        padding: 13px 21px;
+        background-color: #ee8090;
+        border-radius: 6px;
+        color: white;
+        text-align: center;
+        border: none;
+        font-size: 17px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .rightContainer {
+      width: 40vw;
+    }
+  }
+  .importanceContainer {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .leftContainer {
+      width: 40vw;
+      .title {
+        text-align: center;
+        font-size: 40px;
+      }
+      .description {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+    .rightContainer {
+      width: 30vw;
+    }
+  }
+}
