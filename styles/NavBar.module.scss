@@ -1,6 +1,7 @@
 .navBarContainer {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
   .logo {
     &:hover {
       cursor: pointer;
