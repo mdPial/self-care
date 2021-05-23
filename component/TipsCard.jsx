@@ -1,15 +1,21 @@
 import styles from "../styles/Tips.module.scss";
 
-export default function TipsCard({ title, description, index, setIndex }) {
+export default function TipsCard({
+  title,
+  description,
+  index,
+  setIndex,
+  dataSize,
+}) {
   const onClickPreviousHandler = () => {
     if (index != 0) {
       setIndex(index - 1);
     } else {
-      setIndex(4);
+      setIndex(dataSize - 1);
     }
   };
   const onClickNextHandler = () => {
-    if (index != 4) {
+    if (index != dataSize - 1) {
       setIndex(index + 1);
     } else {
       setIndex(0);

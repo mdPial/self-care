@@ -10,6 +10,7 @@ export default function OneMinute() {
         description={data[index].description}
         index={index}
         setIndex={setIndex}
+        dataSize={data.length}
       />
     </div>
   );
