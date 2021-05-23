@@ -45,6 +45,9 @@
           text-align: center;
           border: none;
           font-size: 17px;
+          &:hover {
+            cursor: pointer;
+          }
         }
         .link {
           display: inline-block;
