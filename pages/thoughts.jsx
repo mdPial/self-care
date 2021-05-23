@@ -5,7 +5,7 @@ export default function Thoughts() {
   return (
     <div>
       <Post />
-      <Posts />
+      {/* <Posts /> */}
     </div>
   );
 }
