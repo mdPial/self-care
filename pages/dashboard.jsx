@@ -26,7 +26,7 @@ export default function Dashboard() {
         <Card
           path="./tips.svg"
           title="How to care yourself"
-          route="/tips"
+          route="/care-yourself"
           className={styles.selfcare}
         />
         <Card
