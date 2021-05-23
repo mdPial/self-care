@@ -1,5 +1,5 @@
 const apiUrl = ()=>{
-    return 'http://localhost:3001';
+    return 'https://selfcareapi.herokuapp.com';
 }
 
 export default apiUrl;
