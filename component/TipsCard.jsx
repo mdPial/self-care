@@ -18,25 +18,34 @@ export default function TipsCard({ title, description, index, setIndex }) {
   };
   return (
     <div className={styles.container}>
-      <p className={styles.title}>{title}</p>
+      <div className={styles.titleContainer}>
+        <div className={styles.serial}>
+          <p>
+            Tips <br /> {index + 1}
+          </p>
+        </div>
+        <p className={styles.title}>{title}</p>
+      </div>
       <p className={styles.description}>{description}</p>
-      {index > 0 && (
+      <div className={styles.buttonContainer}>
+        {index > 0 && (
+          <div
+            className={styles.button}
+            onClick={() => {
+              onClickPreviousHandler();
+            }}
+          >
+            PREVIOUS
+          </div>
+        )}
         <div
           className={styles.button}
           onClick={() => {
-            onClickPreviousHandler();
+            onClickNextHandler();
           }}
         >
-          Previous
+          NEXT
         </div>
-      )}
-      <div
-        className={styles.button}
-        onClick={() => {
-          onClickNextHandler();
-        }}
-      >
-        Next
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import TipsCard from "../component/TipsCard";
-import data from "../data/tips.json"
-import styles from "../styles/SignInSignUp.module.scss";
+import data from "../data/tips.json";
 export default function OneMinute() {
   const [index, setIndex] = useState(0);
   return (

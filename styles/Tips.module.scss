@@ -1,19 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 80vh;
   align-items: center;
-  .button {
-    margin: 5px;
-    background-color: #ee8090;
-    padding: 13px 21px;
-    border-radius: 6px;
-    color: white;
-    border: none;
-    font-size: 17px;
-    &:hover {
-      cursor: pointer;
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    .serial {
+      font-size: 26px;
+      width: 86px;
+      height: 86px;
+      font-family: "Rock Salt", cursive;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-right: 10px;
+      border-radius: 50%;
+      background-color: sandybrown;
+    }
+    .title {
+      font-size: 36px;
+      font-family: "Rock Salt", cursive;
+      margin: 0px;
+    }
+  }
+  .description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .buttonContainer {
+    display: flex;
+    .button {
+      margin: 5px;
+      background-color: sandybrown;
+      padding: 13px 21px;
+      border-radius: 6px;
+      color: rgb(255, 255, 255);
+      border: none;
+      font-size: 17px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
