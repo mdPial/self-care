@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -18,7 +19,9 @@ export default function Home() {
               like you anonymously. Build healthy habbit with us and conquer the
               happiness.
             </p>
-            <div className={styles.button}>SIGN UP</div>
+            <Link href="/dashboard">
+            <div className={styles.button}>BROWSE</div>
+            </Link>
           </div>
           <div className={styles.rightContainer}>
             <img src="levitate.gif" width="100%" />
