@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TipsCard from "../component/TipsCard";
-import data from "../data/oneMinuteTips.json";
-export default function OneMinute() {
+import data from "../data/question.json";
+export default function AskYourself() {
   const [index, setIndex] = useState(0);
   return (
     <div>
